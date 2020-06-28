@@ -9,9 +9,9 @@ import (
 )
 
 var (
-	help     bool
-	host     string
-	port     int
+	help bool
+	host string
+	port int
 	//password string
 	//format   string // json normal
 )
@@ -41,7 +41,8 @@ func (c *Command) flagSetting() {
 }
 
 func (c *Command) usage() {
-	fmt.Fprintf(os.Stderr, `redis fetcher Usage: redis-fetcher [-t redisType] [-h host] [-p port] [-a password] [-f format] 
+	fmt.Fprintf(os.Stderr, `redis fetcher,fetch redis-sentinel and redis-server info
+Usage: redis-fetcher [-t redisType] [-h host] [-p port] [-a password] [-f format] 
 Options:
 `)
 	flag.PrintDefaults()
@@ -62,8 +63,8 @@ func (c *Command) parse() {
 	//}
 
 	rh := &handler.RedisHandler{
-		Host:     host,
-		Port:     port,
+		Host: host,
+		Port: port,
 		//Password: password,
 		//Format:   format,
 	}
