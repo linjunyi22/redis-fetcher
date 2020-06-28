@@ -3,7 +3,7 @@
 
 ### how to use
 ```bash
-go get github/linjunyi22/redis-fetcher
+go get github.com/linjunyi22/redis-fetcher
 ```
 
 ```bash
