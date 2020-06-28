@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github/linjunyi22/redis-fetcher/cmd"
+	"github.com/linjunyi22/redis-fetcher/cmd"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github/linjunyi22/redis-fetcher
+module github.com/linjunyi22/redis-fetcher
 
 go 1.13
 

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github/linjunyi22/redis-fetcher/handler"
+	"github.com/linjunyi22/redis-fetcher/handler"
 	"os"
 )
 
@@ -42,7 +42,7 @@ func (c *Command) flagSetting() {
 
 func (c *Command) usage() {
 	fmt.Fprintf(os.Stderr, `redis fetcher,fetch redis-sentinel and redis-server info
-Usage: redis-fetcher [-t redisType] [-h host] [-p port] [-a password] [-f format] 
+Usage: redis-fetcher [-h host] [-p port]
 Options:
 `)
 	flag.PrintDefaults()
